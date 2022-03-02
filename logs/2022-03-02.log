@@ -1,0 +1,51 @@
+time="2022-03-02 11:00:20" level=info msg="debug current:[1]" pkg=model
+time="2022-03-02 11:00:20" level=info msg="| 200 |     17.7765ms |       127.0.0.1 | GET | /test?name=user1&uuid=2&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:08:13" level=error msg="err : [user is not exist]" pkg=model
+time="2022-03-02 11:08:13" level=info msg="| 200 |      6.6155ms |       127.0.0.1 | GET | /user/get?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:11:03" level=info msg="debug set user key:[CY::1]" pkg=model
+time="2022-03-02 11:11:03" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:11:03" level=info msg="| 200 |     14.6445ms |       127.0.0.1 | GET | /test?name=user2&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:14:46" level=info msg="debug set user key:[CY::1]" pkg=model
+time="2022-03-02 11:14:46" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:14:46" level=info msg="| 200 |      7.5835ms |       127.0.0.1 | GET | /test?name=user2&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:15:38" level=info msg="debug set user key:[CY::\x02]" pkg=model
+time="2022-03-02 11:15:38" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:15:38" level=info msg="| 200 |     11.2859ms |       127.0.0.1 | GET | /test?name=user2&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:18:45" level=info msg="request parameters:[{  0 }]" pkg=handler
+time="2022-03-02 11:18:45" level=info msg="debug set user key:[CY::\x03]" pkg=model
+time="2022-03-02 11:18:45" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:18:45" level=info msg="| 200 |      5.2134ms |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:19:00" level=info msg="request parameters:[{  0 }]" pkg=handler
+time="2022-03-02 11:19:00" level=info msg="debug set user key:[CY::\x04]" pkg=model
+time="2022-03-02 11:19:00" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:19:00" level=info msg="| 200 |      4.0838ms |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:22:19" level=info msg="request parameters:[{  0 }]" pkg=handler
+time="2022-03-02 11:22:19" level=info msg="debug set user key:[CY::\x05]" pkg=model
+time="2022-03-02 11:22:19" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"\",\"age\":0,\"gender\":\"\"}]" pkg=model
+time="2022-03-02 11:22:19" level=info msg="| 200 |      4.6031ms |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:23:30" level=info msg="| 200 |       736.4µs |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:25:01" level=info msg="| 200 |            0s |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:25:04" level=info msg="| 200 |            0s |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:32:12" level=info msg="| 200 |            0s |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:33:05" level=info msg="| 200 |      1.1712ms |       127.0.0.1 | GET | /test?name=user3&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:34:00" level=info msg="| 200 |       291.7µs |       127.0.0.1 | GET | /test?name=user4&age=18&gender=male |" pkg=middleware
+time="2022-03-02 11:35:13" level=info msg="| 404 |            0s |       127.0.0.1 | POST | /user/create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:35:28" level=error msg="failed to add error:[json: Unmarshal(non-pointer _const.TestRequest)]" pkg=handler
+time="2022-03-02 11:35:28" level=info msg="| 200 |       593.3µs |       127.0.0.1 | POST | /user/Create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:39:10" level=info msg="| 404 |            0s |       127.0.0.1 | POST | /user/Create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:39:15" level=info msg="request parameters:[{ user5 30 female}]" pkg=handler
+time="2022-03-02 11:39:15" level=info msg="debug set user key:[CY:user5:\x06]" pkg=model
+time="2022-03-02 11:39:15" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"user5\",\"age\":30,\"gender\":\"female\"}]" pkg=model
+time="2022-03-02 11:39:15" level=info msg="| 200 |      7.0461ms |       127.0.0.1 | POST | /user/create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:40:16" level=info msg="request parameters:[{ user1 30 female}]" pkg=handler
+time="2022-03-02 11:40:16" level=info msg="debug current:[1]" pkg=model
+time="2022-03-02 11:40:16" level=info msg="debug set user key:[CY:user1:\x01]" pkg=model
+time="2022-03-02 11:40:16" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"user1\",\"age\":30,\"gender\":\"female\"}]" pkg=model
+time="2022-03-02 11:40:16" level=info msg="| 200 |      11.592ms |       127.0.0.1 | POST | /user/create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:45:24" level=info msg="request parameters:[{ user1 30 female}]" pkg=handler
+time="2022-03-02 11:45:24" level=info msg="debug current:[1]" pkg=model
+time="2022-03-02 11:45:24" level=info msg="debug set user key:[CY:user1:1]" pkg=model
+time="2022-03-02 11:45:24" level=info msg="debug set user val:[{\"uuid\":\"\",\"name\":\"user1\",\"age\":30,\"gender\":\"female\"}]" pkg=model
+time="2022-03-02 11:45:24" level=info msg="| 200 |      6.4774ms |       127.0.0.1 | POST | /user/create?name=user1&uuid=1 |" pkg=middleware
+time="2022-03-02 11:45:44" level=info msg="request parameters:[{1 user1 0 }]" pkg=handler
+time="2022-03-02 11:45:44" level=info msg="| 200 |      8.0591ms |       127.0.0.1 | GET | /user/get?name=user1&uuid=1 |" pkg=middleware
